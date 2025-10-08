@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: lightgray;
+    text-shadow: horizontal-offset vertical-offset blur-radius black;
 }
 
 html{
@@ -19,6 +20,10 @@ html{
     align-items: center;
     gap: 100px;
     background-color: #001f7c38;
+    background-image: url("images/glaxxxy.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -288,7 +293,7 @@ header ul a:hover{
     height: 40vh;
     overflow: hidden;
     border: 1px solid gray;
-    background-color: #080020b7;
+    background-color: #000000ec;
     border-radius: 20px;
     transition: 0.5s;
 }
@@ -311,7 +316,7 @@ header ul a:hover{
     max-width: 300px;
     color: gray;
     font-size: 13px;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 .card h1, .card p {
     color: white; /* ya jo color chahiye */
@@ -325,12 +330,13 @@ header ul a:hover{
     object-fit: cover;
 }
 
-.card video{
-    margin-top: 10%;
+.card img{
+    margin-top: 5%;
     width: 70%;
     height: 50%;
     object-fit: cover;
     mix-blend-mode: lighten;
+    margin:  0 auto;
 }
 
 .card button{
@@ -346,7 +352,10 @@ header ul a:hover{
     cursor: pointer;
     transition: 0.3s;
 }
-
+.card .profile{
+    width: 220px;
+    height: 220px;
+}
 .card button:hover{
     box-shadow: 0 0 15px lightgray;
     opacity: 0.7;
@@ -414,7 +423,7 @@ header ul a:hover{
 
 }
 
-.project-vidbox video{
+.project-vidbox img{
     object-fit: cover;
     width: 100%;
     box-shadow: 0 0 10px lightgray;
@@ -422,7 +431,7 @@ header ul a:hover{
     transition: 0.5s;
 }
 
-.project-card video:hover{
+.project-card img:hover{
     box-shadow: 0 0 25px rgb(255, 255, 255);
 }
 
@@ -503,7 +512,7 @@ header ul a:hover{
 
 .hover-sign::before,
 .hover-sign::after {
-    content: "👆";
+    content: "🖐";
     text-align: center;
     position: absolute;
     font-size: 50px;
@@ -513,7 +522,48 @@ header ul a:hover{
     animation: hover-animation 4s ease-in-out infinite;
 
 }
+.project-vidbox .hovers-sign{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100px;
+}
 
+.hover-signs::before,
+.hover-signs::after {
+    content: "🙋‍♂️";
+    text-align: center;
+    position: absolute;
+    font-size: 50px;
+    top: 20%;
+    left: 40%;
+    border-radius: 40px;
+    animation: hover-animation 4s ease-in-out infinite;
+
+}
+.project-vidbox .hover-signss{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100px;
+}
+
+.hover-signss::before,
+.hover-signss::after {
+    content: "🎈";
+    text-align: center;
+    position: absolute;
+    font-size: 50px;
+    top: 20%;
+    left: 40%;
+    border-radius: 40px;
+    animation: hover-animation 4s ease-in-out infinite;
+
+}
 .hover-sign.active{
     display: none;
 }
